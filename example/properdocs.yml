@@ -1,0 +1,53 @@
+site_name: ProperDocs Example
+
+docs_dir: docs/
+site_dir: site/
+
+theme:
+    name: material
+    palette:
+        -   scheme:     slate
+    features:
+        -   navigation.tracking
+        -   navigation.instant
+        -   navigation.index
+
+docs_dir: docs/
+site_dir: site/
+use_directory_urls: false
+
+theme:
+    name: materialx
+    palette:
+        -   scheme:     slate
+    features:
+        -   navigation.tracking
+        -   navigation.instant
+        -   navigation.index
+
+extra_css:
+    -   resources/stylesheets/extra.css
+
+plugins:
+    - awesome-pages
+    - minify
+    - tags
+
+markdown_extensions:
+    - admonition
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - extensions.ditaa
+    - pymdownx.superfences:
+        custom_fences:
+          - name: ditaa
+            class: ditaa
+            format: !!python/name:extensions.ditaa.ditaa_fence
+    - admonition
+    - pymdownx.details
+    - attr_list
+    - tables
+    - plantuml_markdown:
+        plantuml_cmd: "java -Djava.awt.headless=true -jar /opt/plantuml/plantuml.jar"
