@@ -1,0 +1,111 @@
+:root {
+    --solarized-background:             #002B36;
+    --solarized-foreground:             #839496;
+    --solarized-selection-background:   #FFFFFF;
+    --solarized-cursor-color:           #FFFFFF;
+
+    --solarized-black:                  #002B36;
+    --solarized-blue:                   #268BD2;
+    --solarized-cyan:                   #2AA198;
+    --solarized-green:                  #859900;
+    --solarized-purple:                 #D33682;
+    --solarized-red:                    #DC322F;
+    --solarized-white:                  #EEE8D5;
+    --solarized-yellow:                 #B58900;
+
+    --solarized-bright-black:           #073642;
+    --solarized-bright-blue:            #839496;
+    --solarized-bright-cyan:            #93A1A1;
+    --solarized-bright-green:           #586E75;
+    --solarized-bright-purple:          #6C71C4;
+    --solarized-bright-red:             #CB4B16;
+    --solarized-bright-white:           #FDF6E3;
+    --solarized-bright-yellow:          #657B83;
+}
+
+[data-md-color-scheme="banner"] {
+    --md-primary-fg-color:              #231F1F;
+    --md-accent-fg-color:               #FFD600;
+}
+
+[data-md-color-scheme="solarized-dark"] {
+    /* The body colors */
+    --md-default-bg-color:              var(--solarized-background);
+    --md-default-fg-color:              var(--solarized-foreground);
+
+    --md-default-bg-color--light:       var(--solarized-white);
+    --md-default-bg-color--lighter:     var(--solarized-white);
+    --md-default-bg-color--lightest:    var(--solarized-white);
+    --md-default-fg-color--light:       var(--solarized-bright-yellow);
+    --md-default-fg-color--lighter:     var(--solarized-bright-yellow);
+    --md-default-fg-color--lightest:    var(--solarized-bright-yellow);
+
+    /* The body text color */
+    --md-typeset-color:                 var(--solarized-foreground);
+
+    --md-typeset-a-color:               var(--solarized-blue);
+
+    --md-typeset-mark-color:            var(--solarized-white);
+
+    --md-typeset-del-color:             var(--solarized-white);
+    --md-typeset-ins-color:             var(--solarized-white);
+
+    --md-typeset-kbd-color:             var(--solarized-white);
+    --md-typeset-kbd-accent-color:      var(--solarized-white);
+    --md-typeset-kbd-border-color:      var(--solarized-white);
+
+    --md-typeset-table-color:           var(--solarized-white);
+
+    /* The body code block text colors */
+    --md-code-bg-color:                 var(--solarized-bright-black);
+    --md-code-fg-color:                 var(--solarized-white);
+
+    --md-code-hl-number-color:          var(--solarized-cyan);
+    --md-code-hl-special-color:         var(--solarized-cyan);
+    --md-code-hl-function-color:        var(--solarized-green);
+    --md-code-hl-constant-color:        var(--solarized-green);
+    --md-code-hl-keyword-color:         var(--solarized-blue);
+    --md-code-hl-string-color:          var(--solarized-yellow);
+    --md-code-hl-name-color:            var(--solarized-white);
+    --md-code-hl-operator-color:        var(--solarized-white);
+    --md-code-hl-punctuation-color:     var(--solarized-foreground);
+    --md-code-hl-comment-color:         var(--solarized-foreground);
+    --md-code-hl-generic-color:         var(--solarized-white);
+    --md-code-hl-variable-color:        var(--solarized-white);
+
+    /* The header colors */
+    --md-primary-bg-color:              var(--solarized-white);
+    --md-primary-fg-color:              var(--solarized-blue);
+
+    --md-primary-bg-color--light:       var(--solarized-white);
+    --md-primary-fg-color--light:       var(--solarized-white);
+    --md-primary-fg-color--dark:        var(--solarized-white);
+
+    --md-accent-bg-color:               var(--solarized-white);
+    --md-accent-fg-color:               var(--solarized-blue);
+
+    --md-accent-bg-color--light:        var(--solarized-white);
+    --md-accent-fg-color--transparent:  var(--solarized-white);
+
+    /* The footer colors */
+    --md-footer-bg-color:               var(--solarized-bright-black);
+    --md-footer-fg-color:               var(--solarized-foreground);
+
+    --md-footer-fg-color--light:        var(--solarized-foregound);
+    --md-footer-fg-color--lighter:      var(--solarized-foreground);
+    --md-footer-bg-color--dark:         var(--solarized-background);
+
+    --md-admonition-fg-color:           var(--solarized-foreground);
+    --md-admonition-bg-color:           var(--solarized-background);
+}
+
+img[src*='#left'] {
+    float: left;
+}
+img[src*='#right'] {
+    float: right;
+}
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
